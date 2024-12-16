@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--======== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--======== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+       <!--========  CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">  
+
+        <title>Luxury Watches</title>
+</head>
+<body>
+    <!--============= HEADER ====================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+            <i class="bx bxs-watch nav__logo-icon"></i> LUXURY WATCHES
+        </a>
+
+        <!-- Navigation Menu -->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                <li class="nav__item">
+                    <a href="collections.html" class="nav__link">Collections</a>
+                </li>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="bx bx-x"></i>
+            </div>
+        </div>
+
+        <!-- Toggle Button -->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+    </nav>
+</header>
+
+    <!--============= MAIN ====================-->
+    <main class="main">
+        
+        
+        <!--============= Collections ====================-->
+        <section class="featured section container" id="featured">
+    <h2 class="section__title">Collections</h2>
+
+    <!-- Filter Button -->
+    <button class="filter__button" id="filter-button">Filter</button>
+
+    <!-- Filter Panel (Initially Hidden) -->
+    <div class="filter__container" id="filter-container">
+        <div class="filter__panel">
+            <h3>Filters</h3>
+
+            <!-- Brand Filter -->
+            <label for="brand-filter">Brand:</label>
+            <select id="brand-filter" class="filter__dropdown">
+                <option value="all">All</option>
+                <option value="rolex">Rolex</option>
+                <option value="omega">Omega</option>
+                <option value="panerai">Panerai</option>
+            </select>
+
+            <!-- Price Filter -->
+            <label for="price-filter">Price:</label>
+            <select id="price-filter" class="filter__dropdown">
+                <option value="default">Default</option>
+                <option value="low-to-high">Low to High</option>
+                <option value="high-to-low">High to Low</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="featured__grid" id="featured-grid">
+        <!-- Product 1 -->
+        <article class="featured__item" data-brand="rolex" data-price="1289000">
+            <img src="assets/img/featured1.png">
+            <h3>Rolex Daytona Full Yellow Gold Black Dial</h3>
+            <p>₱2,980,000.00</p>
+            <a href="booking.html" class="button home__button">BUY NOW</a>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="featured__item" data-brand="rolex" data-price="989000">
+            <img src="assets/img/product1.png">
+            <h3>Rolex Day Date Platinum</h3>
+            <p>₱4,098,000.00</p>
+            <a href="booking.html" class="button home__button">BUY NOW</a>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="featured__item" data-brand="omega" data-price="345000">
+            <img src="assets/img/featured2.png">
+            <h3>Omega Speedmaster Moonwatch Silver</h3>
+            <p>₱989,000.00</p>
+            <a href="booking.html" class="button home__button">BUY NOW</a>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="featured__item" data-brand="omega" data-price="495000">
+            <img src="assets/img/product5.png">
+            <h3>Omega Speedmaster Moon to Mars</h3>
+            <p>₱495,000.00</p>
+            <a href="booking.html" class="button home__button">BUY NOW</a>
+        </article>
+        
+        <!-- Product 5 -->
+        <article class="featured__item" data-brand="panerai" data-price="495000">
+            <img src="assets/img/product3.png">
+            <h3>PANERAI PAM 384 Black Ceramic</h3>
+            <p>₱345,000.00</p>
+            <a href="booking.html" class="button home__button">BUY NOW</a>
+        </article>
+        
+        <!-- Product 6 -->
+        <article class="featured__item" data-brand="panerai" data-price="495000">
+            <img src="assets/img/product4.png">
+            <h3>Panerai Radiomir Blue</h3>
+            <p>₱289,000.00</p>
+            <a href="booking.html" class="button home__button">BUY NOW</a>
+        </article>
+    </div>
+</section>
+
+
+
+        
+
+       
+   <!--======== ===== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our Information</h3>
+
+                <ul class="footer__list">
+                    <li>4217 - Batangas</li>
+                    <li>Lipa City</li>
+                    <li>123-456-789</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Mobile Phones</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Mountain Bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Electric</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--======== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>     
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
